@@ -12,7 +12,7 @@
 
 <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-        <h5 class="my-0 mr-md-auto font-weight-normal">My First Project</h5>
+        <h5 class="my-0 mr-md-auto font-weight-normal"> <a href="">Travel-Tour.com</a></h5>
         <nav class="my-2 my-md-0 mr-md-3">
             <a class="p-2 text-dark" href="#">Features</a>
             <a class="p-2 text-dark" href="#">Enterprise</a>
@@ -21,13 +21,13 @@
         </nav>
         <a class="btn btn-outline-primary" href="#">Sign up</a>
     </div>
-    <div class="conteiner mt-5 ml-5">
+    <div class="container mt-5 ml-5">
         <h3 class="mb-5">States</h3>
 
         <div class="d-flex flex-wrap">
             <?php
             //вывели карточку 5 раз 
-            for ($i = 0; $i < 7; $i++) : //сдесь открыли цикл
+            for ($i = 0; $i < 9; $i++) : //сдесь открыли цикл
             ?>
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
@@ -41,7 +41,7 @@
                             <li>Email support</li>
                             <li>Help center access</li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Go visit</button>
                     </div>
                 </div>
             <?php
@@ -50,43 +50,7 @@
         </div>
     </div>
 
-    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-            <div class="col-12 col-md">
-                <img class="mb-2" src="/docs/4.4/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-                <small class="d-block mb-3 text-muted">© 2020-2021</small>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
-                    <li><a class="text-muted" href="#">Team feature</a></li>
-                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                    <li><a class="text-muted" href="#">Another one</a></li>
-                    <li><a class="text-muted" href="#">Last time</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
-                    <li><a class="text-muted" href="#">Another resource</a></li>
-                    <li><a class="text-muted" href="#">Final resource</a></li>
-                </ul>
-            </div>
-            <div class="col-6 col-md">
-                <h5>About</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-                    <li><a class="text-muted" href="#">Privacy</a></li>
-                    <li><a class="text-muted" href="#">Terms</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <?php require "blocks/footer.php" ?>
 </body>
 
 </html>
