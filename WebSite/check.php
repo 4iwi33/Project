@@ -28,8 +28,13 @@
 
     // "mail" - функця для отправки сообщения
 
-    //"$subject" - переменая которая содержит название письма
+    // "$subject" - переменая которая содержит название письма
+    // "base64_encode" - кодирует данные способом MIME base64.
     $subject = "=?utf-8?B?" . base64_encode("Testing message") . "?=";
+    // "$headers" - переменая содержит заголовки 
+    $headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html;charset=utf-8\r\n";
+
+
     mail('4iwi33@mail.ru', $subject, $headers);
     ?>
 </body>
