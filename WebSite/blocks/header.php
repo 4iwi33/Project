@@ -6,5 +6,11 @@
         <a class="p-2 text-dark" href="#">Support</a>
         <a class="p-2 text-dark" href="#">Pricing</a>
     </nav>
-    <a class="btn btn-outline-primary" href="#">Sign up</a>
-</div>
+    <?php
+        if ($_COOKIE['user'] == 'yes'):
+    ?>
+    <a class="btn btn-outline-primary" href="/auth.php">Сabinet of user</a>
+    <?php else: ?>
+    <a class="btn btn-outline-primary" href="/auth.php">Sign up</a>
+    <?php endif; ?>
+</div>  
