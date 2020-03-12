@@ -25,6 +25,12 @@
         echo $error;
         exit;  // "exit" — Вывести сообщение и прекратить выполнение текущего скрипта
     }
+
+    // "mail" - функця для отправки сообщения
+
+    //"$subject" - переменая которая содержит название письма
+    $subject = "=?utf-8?B?" . base64_encode("Testing message") . "?=";
+    mail('4iwi33@mail.ru', $subject, $headers);
     ?>
 </body>
 
