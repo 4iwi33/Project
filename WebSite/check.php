@@ -26,7 +26,7 @@
         exit;  // "exit" — Вывести сообщение и прекратить выполнение текущего скрипта
     }
 
-    // "mail" - функця для отправки сообщения
+
 
     // "$subject" - переменая которая содержит название письма
     // "base64_encode" - кодирует данные способом MIME base64.
@@ -34,8 +34,10 @@
     // "$headers" - переменая содержит заголовки 
     $headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html;charset=utf-8\r\n";
 
-
+    // "mail" - функця для отправки сообщения
     mail('4iwi33@mail.ru', $subject, $headers);
+
+    // header('Location: /about.php');
     ?>
 </body>
 
