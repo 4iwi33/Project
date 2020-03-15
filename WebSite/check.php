@@ -35,7 +35,7 @@
     // "mail" - функця для отправки сообщения
     mail('4iwi33@mail.ru', $subject, $headers);
 
-      header("Location: about.php");
+    //   header('Location: /about.php');
     ?>
 </body>
 
