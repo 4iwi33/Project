@@ -41,7 +41,6 @@
             ?>
         </div>
     </div>
-
     <?php require "blocks/footer.php" ?>
 </body>
 
