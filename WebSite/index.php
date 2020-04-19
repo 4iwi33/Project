@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php require "blocks/header.php" ?>
+<?php require "blocks/header.php" ?>
 
     <div class="container mt-5 ml-5">
         <h3 class="mb-5">States</h3>
